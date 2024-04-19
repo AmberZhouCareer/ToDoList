@@ -48,34 +48,10 @@ ng version
 
 ## 5. Get the TodoList Source Code Locally
 
-First, create a folder and name it `TodoListDev`. Remember to go to the folder with the following command:
-
-```shell
-mkdir TodoListDev & cd TodoListDev
-```
-
-Then, run the `git clone` command to copy the project to your folder.
+Run the `git clone` command to copy the project to your folder.
 
 ```shell
 git clone <REMOTE_URL>
-```
-
-Alternative you can extract the TodoList source code from provided zip file named  **==TodoList.zip==**
-
-```shell
-powershell Expand-Archive -LiteralPath "C:\Temp\TodoList.zip" -DestinationPath "C:\TodoListDev" -Force
-```
-
-Next, check the `TodoListDev` folder to see if the clone `TodoList` is inside. Run `dir` command to display the folder's contents:
-
-```shell
-dir
-```
-
-Navigate to the Angular frontend project folder:
-
-```shell
-cd C:\TodoListDev\TodoList\TodoAui
 ```
 
 ## 6. Install required npm Packages
@@ -101,14 +77,14 @@ Now you have all requirements to run the project.
 First, run the WebAPI backend server with commands:
 
 ```shell
-cd /TodoListDev/TodoList/TodoApi
+cd /ToDoList/TodoApi
 dotnet run
 ```
 
 Next, run the Angular frontend web app:
 
 ```shell
-cd /TodoListDev/TodoList/TodoAui
+cd /ToDoList/TodoAui
 ng serve
 ```
 
